@@ -144,6 +144,7 @@ def parse(url, engine=None, conn_max_age=0, ssl_require=False):
         'django.contrib.gis.db.backends.postgis',
         'django.db.backends.postgresql_psycopg2',
         'django.db.backends.postgresql',
+        'psqlextra.backend',
         'django_redshift_backend',
     ):
         options['options'] = '-c search_path={0}'.format(options.pop('currentSchema'))

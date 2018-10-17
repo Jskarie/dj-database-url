@@ -92,3 +92,5 @@ URL schema
        from using other Oracle tools (like SQLPlus) i.e. user and password are separated
        by ``:`` not by ``/``. Also you can omit ``HOST`` and ``PORT``
        and provide a full DSN string or TNS name in ``NAME`` part.
+-- [4] For postgres, postgis and redshift you can set the search_path by setting the query parameter
+       currentSchema, eg. postgres://USER:PASSWORD@HOST:PORT/NAME?currentSchema=public
